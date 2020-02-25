@@ -1,5 +1,4 @@
 ## https://pre-commit.com/
-## https://github.com/pre-commit/pre-commit-hooks
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.0.0
