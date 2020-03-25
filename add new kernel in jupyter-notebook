@@ -1,0 +1,11 @@
+# sometimes the jupyter-notebook does not take into account the conda environment, leading to import error
+# you can see this by running import sys print(sys.executable) from both the terminal and the jupyter-notebook
+# if they don't show the same path, with the environment included,
+# you can directly create a new kernel to use in jupyter-notebook
+
+# run this in the terminal
+pip install ipykernel
+python -m ipykernel install --user --name <kernel_name> --display-name "<Name_to_display>"
+# don't forget to change <kernel_name> and <Name_to_display> by the conda environment name
+
+# Finally, in jupyter-notebook, select Kernel>Change kernel><kernel_name>
