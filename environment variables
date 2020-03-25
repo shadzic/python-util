@@ -1,0 +1,6 @@
+# to open the files where the environment variables are saved
+nano ~/.bash_profile
+save the environment variables e.g. MY_VAR="my_var"
+save + quit
+# to include your changes in the current terminal
+source ~/.bash_profile
