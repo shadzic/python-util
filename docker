@@ -1,0 +1,11 @@
+# verify installation
+docker --version
+
+# build image 
+docker build .
+
+# list images
+docker image ls
+
+# run docker with AWS secrets passed
+docker run -e AWS_ACCESS_KEY_ID="<AWS_ACCESS_KEY_ID>" -e AWS_SECRET_ACCESS_KEY="<AWS_SECRET_ACCESS_KEY>" <docker-image> <command-line>
