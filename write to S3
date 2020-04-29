@@ -1,0 +1,25 @@
+# Two solutions
+
+# Solution 1
+import s3fs
+    
+filepath = f's3://<bucket-name>/<DIR>/<filename>'    
+sfmc_s3 = s3fs.S3FileSystem(key=os.environ[<AWS_ACCESS_KEY_ID>], secret=os.environ[<AWS_ACCESS_KEY>])
+with sfmc_s3.open(smfc_score_path, 'w') as f:
+    <pd.df>.to_csv(f, index=False)
+
+# Solution 2
+import boto3
+from io import StringIO
+
+bucket = <bucket-name>
+filepath = <filepath-to-file.csv>
+session = boto3.Session(
+    aws_access_key_id=os.environ[<AWS_ACCESS_KEY_ID>],
+    aws_secret_access_key=os.environ[<AWS_ACCESS_KEY>],
+)
+s3 = session.resource('s3')
+csv_buffer = StringIO()
+df_customers_to_score.to_csv(csv_buffer)
+s3_resource = session.resource('s3')
+s3_resource.Object(bucket, filepath).put(Body=csv_buffer.getvalue())
