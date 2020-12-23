@@ -1,0 +1,3 @@
+# https://packaging.python.org/tutorials/installing-packages/#requirements-for-installing-packages
+python3 -m venv <DIR>
+source <DIR>/bin/activate
