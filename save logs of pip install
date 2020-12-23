@@ -1,0 +1,1 @@
+pip install <PACKAGE> --log <LOG_FILE>
