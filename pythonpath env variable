@@ -1,0 +1,2 @@
+# Export this env var to solve module imports errors
+export PYTHONPATH=$PWD
