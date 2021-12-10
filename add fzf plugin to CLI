@@ -1,0 +1,19 @@
+#1 install fzf: https://github.com/junegunn/fzf#using-homebrew
+brew install fzf
+
+#2 install fuzzy completion:
+$(brew --prefix)/opt/fzf/install
+source ~/.zshrc   
+
+#3 settings to add fzf plugin: https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
+# To add in zshrc file
+export FZF_BASE="/Users/<username>/opt/fzf/bin:$PATH"
+export FZF_DEFAULT_COMMAND='rg'
+DISABLE_FZF_AUTO_COMPLETION="true"
+
+# don't forget to source the zshrc file after!
+source ~/.zshrc 
+
+# to use it in the terminal, press CTRL + R and then search for past commands For example kubectl
+
+# optional: install fzf-tab: https://reposhub.com/linux/shell-script-development/Aloxaf-fzf-tab.html
