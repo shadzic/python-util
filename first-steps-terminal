@@ -1,0 +1,14 @@
+#install pycharm
+#install Github desktop\
+#install zsh
+#install oh-my-zsh
+#make zsh the default shell
+zsh
+chsh -s $(which zsh)
+#install micro
+sudo apt-get install micro
+#customise the terminal
+micro ~/.zshrc
+#themes: edvardm, half-life, jonathan, nicoulaj, refined, theunraveler
+#use zsh-autosuggestions --> https://www.sitepoint.com/zsh-tips-tricks/
+source ~/.zshrc
