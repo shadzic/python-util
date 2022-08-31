@@ -1,0 +1,3 @@
+# https://docs.python.org/3/library/importlib.html#importlib.reload
+import importlib
+importlib.reload(mylibrary)
