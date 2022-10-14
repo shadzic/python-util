@@ -1,0 +1,10 @@
+The steps are, in your terminal:
+Activate your environment you want black to be installed in, eg. conda activate <env_name> (eg. “nf_base”)
+For .py script files: pip install black
+For jupyter notebooks: pip install 'black[jupyter]'
+To maybe keep some of your own formattings you find more readable I’d suggest to duplicate your file
+Execution: black <filename>.py or black <filename>.ipynb
+Here’s Black on GitHub:
+https://github.com/psf/black
+And this again are the pep8 guidelines black refers to:
+https://peps.python.org/pep-0008/ 
