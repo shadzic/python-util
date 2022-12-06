@@ -1,0 +1,16 @@
+# https://www.dataquest.io/blog/python-api-tutorial/
+import requests
+from requests import Response
+
+parameters = {
+    "param1": value1,
+    "param2": value2,
+}
+response = requests.get(URL, params=parameters)
+
+def jprint(obj: Response):
+    # create a formatted string of the Python JSON object
+    text = json.dumps(obj, sort_keys=True, indent=4)
+    print(text)
+
+print(response.json())
