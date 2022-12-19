@@ -1,0 +1,11 @@
+
+# absolute path
+import os 
+absolute_path = os.path.dirname(__file__) # gives the directory where the file is
+
+# https://note.nkmk.me/en/python-import-module-search-path/
+# import functions from other modules
+## to specify to python where to search for modules, we need to add the modules to the PYTHONPATH
+## examples:
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../tests'))
