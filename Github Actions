@@ -2,6 +2,11 @@
 # https://blog.deepjyoti30.dev/tests-github-python
 
 # Example:
+
+# 1. create .github/workflos directory
+# 2. add github-actions.yml file
+# 3. write the yml file with the jobs to run, see example below:
+
 name: Run tests
 run-name: ${{ github.actor }} is running the tests-suite with GitHub Actions 🚀
 on:
