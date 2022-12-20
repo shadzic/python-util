@@ -9,3 +9,5 @@ absolute_path = os.path.dirname(__file__) # gives the directory where the file i
 ## examples:
 sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
 sys.path.append(os.path.join(os.path.dirname(__file__), '../tests'))
+
+# more info: https://stackoverflow.com/questions/14132789/relative-imports-for-the-billionth-time
