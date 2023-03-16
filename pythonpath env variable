@@ -1,2 +1,5 @@
 # Export this env var to solve module imports errors
 export PYTHONPATH=$PWD
+
+# In Jupyter-notebook, this tutorial is helpful to add a new kernel to use
+# https://www.alfredo.motta.name/create-isolated-jupyter-ipython-kernels-with-pyenv-and-virtualenv/
