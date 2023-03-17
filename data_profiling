@@ -1,0 +1,5 @@
+# https://towardsdatascience.com/1-line-of-python-code-for-data-profiling-660496883d8f
+pip install pandas_profiling
+import pandas_profiling
+report=pandas_profiling.ProfileReport(df)
+report.to_file('report.html')
