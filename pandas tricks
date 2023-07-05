@@ -1,0 +1,18 @@
+import pandas as pd
+
+# compute a DF from incremental metrics computation
+final_df = pd.DataFrame()
+for f in whatever:
+  df = pd.DataFrame(
+              [[
+                  f,
+                  my_variable,
+                  my_other_variable, 
+              ]],
+              columns=[
+                  "iterator",
+                  "my_variable",
+                  "my_other_variable",
+              ]
+          )
+  final_df = pd.concat([final_df, df])
