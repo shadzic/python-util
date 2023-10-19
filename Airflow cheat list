@@ -1,0 +1,2 @@
+# Trigger another dag, onces this dag has run:
+# https://airflow.apache.org/docs/apache-airflow/stable/_api/airflow/operators/trigger_dagrun/index.html
