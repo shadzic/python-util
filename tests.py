@@ -66,3 +66,21 @@ you can parametrize a single test definition, and pytest will create variants of
 ])
 def test_is_palindrome(maybe_palindrome, expected_result):
     assert is_palindrome(maybe_palindrome) == expected_result
+
+
+
+# Test that an exception is raised:
+def test_raise_exception():
+    expected_exception = "exception_message"
+    with pytest.raises(Exception, match=re.escape(expected_exception)):
+        # To what should raise an exception
+
+
+# Test that should not raise an exception
+def test_no_exception():
+    try:
+        # do what needs to be done
+        # assert
+    except Exception as e:
+        pytest.fail(f"unexpected exception raised: {e}")
+
