@@ -1,0 +1,13 @@
+def notify(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling function: {func.__name__}")
+        result = func(*args, **kwargs)
+        print(f"{func.__name__} SUCCESS")
+        return result
+    return wrapper
+
+@notify
+def example_function():
+    print("Function is running")
+
+example_function()
