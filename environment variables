@@ -6,3 +6,16 @@ save + quit
 # to include your changes in the current terminal
 source ~/.bash_profile
 source ~/.zshrc 
+
+
+# In conda / virtual environment
+pip install python-dotenv
+
+# In python file:
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# Load environment variable
+TOKEN = os.getenv('TOKEN') 
