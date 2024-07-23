@@ -1,5 +1,0 @@
-# https://towardsdatascience.com/1-line-of-python-code-for-data-profiling-660496883d8f
-pip install ydata_profiling # From April 1st, pandas-profiling no longer supported
-import ydata_profiling
-report=ydata_profiling.ProfileReport(df)
-report.to_file('report.html')
