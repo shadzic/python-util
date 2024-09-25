@@ -10,3 +10,9 @@ docker image ls
 
 # run docker with AWS secrets passed
 docker run -e AWS_ACCESS_KEY_ID="<AWS_ACCESS_KEY_ID>" -e AWS_SECRET_ACCESS_KEY="<AWS_SECRET_ACCESS_KEY>" <docker-image> <command-line>
+
+
+# Build docker image and run container in the folder where the Dockerfile is
+docker build -t <image_name> .
+docker images #to verify that the image has been built
+docker run -it -p 8888:8888 <image_name>
