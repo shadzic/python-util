@@ -1,0 +1,4 @@
+# after activating conda environment, in the terminal:
+conda install jupyter
+conda update jupyter
+jupyter notebook --debug
