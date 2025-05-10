@@ -1,5 +1,7 @@
 # Extensive guide to logging: https://www.toptal.com/python/in-depth-python-logging
 
+import logging
+
 logger = logging.getLogger(__name__)
 console_handler = logging.StreamHandler()
 logger.addHandler(console_handler)
